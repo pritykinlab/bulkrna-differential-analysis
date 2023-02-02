@@ -1,5 +1,11 @@
 # samples heatmap code snippet
 
+
+# required packages
+library(DESeq2)
+library(pheatmap)
+
+
 # normalize the deseq object
 normalized_counts <- counts(dds, normalized = TRUE)
 

@@ -1,5 +1,10 @@
-
 # pca plot code snippet
+
+
+# required packages
+library(DESeq2)
+library(ggplot2)
+
 
 # transform data to use in plot
 vsd <- vst(dds, blind = FALSE)

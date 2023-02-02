@@ -1,3 +1,10 @@
+# preprocessing code snippet
+
+
+# required packages
+library(SummarizedExperiment)
+
+
 # create function to normalize counts in deseq object
 # assume rowRanges is a non-empty GRangesList and size factors were already computed (ex: using estimateSizeFactors())
 normCounts <- function(se) {

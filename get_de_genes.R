@@ -1,5 +1,10 @@
-
 # function to extract significant differentially expressed genes
+
+
+# required packages
+library(DESeq2)
+
+
 # dds is a deseq object
 # col is the column of interest
 # cont1 is the first contrast element

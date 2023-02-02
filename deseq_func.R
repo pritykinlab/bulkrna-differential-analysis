@@ -1,5 +1,12 @@
-
 # function to run deseq
+
+
+# required libraries
+library(SummarizedExperiment)
+library(DESeq2)
+library(glue)
+
+
 # se is a SummarizedExperiment object
 # col is the column of interest
 # ... can contain 0 or more adjustors the adjustors
