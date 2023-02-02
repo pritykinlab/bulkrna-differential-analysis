@@ -20,9 +20,6 @@ get_de_genes <- function(dds, col, cont1, cont2) {
     # sort the results by padj
     res <- res[order(res$padj), ]
     
-    # save the results to a file
-    write.csv(as.data.frame(res), file = "res1.csv")
-    
     return(list("dds" = dds, "res" = res))
 }
 
