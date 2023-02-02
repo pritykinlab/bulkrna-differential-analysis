@@ -21,5 +21,14 @@ normCounts <- function(se) {
 # prepare collection of all exons for genes in gencode 
 # only want exons, not introns, because introns are not expressed
 genes <- levels(as.factor(gencode$gene_name))
+
+# use only 1 of the following lines of code (to select either all exons or only protein coding exons, respectively)
+
+# all exons
 exons <- gencode[gencode$type == 'exon']
+
+# only protein coding genes
+exons <- gencode[(gencode$gene_type == 'protein_coding') & (gencode$type == 'exon')]
+
+
 exons_genes <- disjoin(split(exons, factor(exons$gene_name, levels = genes)))
